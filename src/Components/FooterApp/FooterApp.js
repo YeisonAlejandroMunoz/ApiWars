@@ -1,18 +1,11 @@
 import React from 'react'
+import './Footer.css'
 
 function FooterApp() {
   return (
-    <div style={
-        {
-            color:'White',
-            height: '50px',
-            alignitems: 'center',
-            padding:'10px',
-            margin:'auto',
-        }
-    }>
+    <div className='footer'>
         © Copyright Star Wars 2022
-        </div>
+    </div>
   )
 }
 

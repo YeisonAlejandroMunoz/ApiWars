@@ -21,9 +21,9 @@ export const NavApp = () => {
             />{' '}
             </Navbar.Brand>
             <Nav>
-                <Nav.Link >  Home </Nav.Link>
-                <Nav.Link>  Personajes </Nav.Link>
-                <Nav.Link>  Planteas </Nav.Link>
+                <Nav.Link> <Link className="links" to='/'>Home</Link> </Nav.Link>
+                <Nav.Link> <Link className="links" to='/Personajes'>Personajes</Link> </Nav.Link>
+                <Nav.Link> <Link className="links"to='/Planetas'>Planetas</Link> </Nav.Link>
             </Nav>
         </Container>
         </Navbar>

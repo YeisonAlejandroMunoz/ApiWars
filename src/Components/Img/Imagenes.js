@@ -9,7 +9,6 @@ import portada1 from './Obi-Wan-journal-2.jpg';
 import portada2 from './portada.jpg';
 import portada3 from './start.png';
 
-
 export default{
     "IM":imperio,
     "YE":img1,

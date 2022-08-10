@@ -1,3 +1,13 @@
 .Barra{
     background: black;
 }
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.links:hover{
+    color: yellow;
+    transition:  100ms;
+    font-size: 28px;
+}
