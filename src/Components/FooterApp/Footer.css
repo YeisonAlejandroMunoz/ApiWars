@@ -27,8 +27,11 @@
 
 .footer .grupo1 .box h2{
   color: white;
+  letter-spacing:15px;
   margin-bottom: 25px;
+  font-family: 'Starjedi';
   font-size: 20px;
+  font-weight: bold;
 }
 
 .footer .grupo1 .box p{
@@ -45,6 +48,7 @@
 
 .footer .grupo2 small{
   font-size: 20px;
+  font-family: 'Starjedi';
   color: black;
 }
 
@@ -55,4 +59,10 @@
     grid-gap: 30px;
     padding: 35px 0px;    
   }
+}
+
+
+@font-face {
+  font-family: 'Starjedi';
+  src: url(../Fonts/Starjedi.ttf);
 }

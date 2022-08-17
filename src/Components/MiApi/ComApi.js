@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import casco from '../Img/casco.jpg'
+import './PerApi.css'
 
 export const ComApi = () => {
     const [Personajes,setPersonajes] = useState ([]);
@@ -13,14 +15,17 @@ export const ComApi = () => {
   return (
     <div>
         {Personajes.map(Personajes=>(
-            <div key={setPersonajes}>
-                <p>{ Personajes.name }</p>
-                <p>{ Personajes.height}</p>
-                <p>{ Personajes.mass}</p>
-                <p>{ Personajes.hair_color}</p>
-                <p>{ Personajes.eye_color}</p>
-                <p>{ Personajes.birth_year}</p>
-                <p>{ Personajes.gender}</p>
+            <div className='cajax-container' key={setPersonajes}>
+                <div>
+                    <img style={{width: '230px', height: '200px'}} src={casco} />
+                <p> Nombre: { Personajes.name }</p>
+                <p> Altura: { Personajes.height}</p>
+                <p> Masa: { Personajes.mass}</p>
+                <p> Color de Pelo: { Personajes.hair_color}</p>
+                <p> Color de Ojos: { Personajes.eye_color}</p>
+                <p> Año de Nacimiento: { Personajes.birth_year}</p>
+                <p> Genero: { Personajes.gender}</p>
+                </div>
             </div>
         ))}
     </div>

@@ -1,0 +1,13 @@
+.CardGruop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 0%;
+    background-image: url('../Img/fondo.png');
+}
+
+
+@font-face {
+    font-family: 'Starjedi';
+    src: url(../Fonts/Starjedi.ttf);
+}

@@ -14,7 +14,7 @@ export const PlaneApi = () => {
     <div>
         {Planetas.map(Planetas=>(
             <div key={setPlanetas}>
-                <p>{ Planetas.name }</p>
+                <p> Nombre: { Planetas.name }</p>
                 <p>{ Planetas.rotation_period}</p>
                 <p>{ Planetas.orbital_period}</p>
                 <p>{ Planetas.diameter}</p>

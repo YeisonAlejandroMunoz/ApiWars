@@ -4,10 +4,16 @@
 .links{
     text-decoration: none;
     color: white;
+    font-family: 'Starjedi';
     font-size: 15px;
 }
 .links:hover{
     color: yellow;
     transition:  100ms;
     font-size: 18px;
+}
+
+@font-face {
+    font-family: 'Starjedi';
+    src: url(../Fonts/Starjedi.ttf);
 }
