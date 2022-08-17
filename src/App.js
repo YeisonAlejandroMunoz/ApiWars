@@ -11,7 +11,6 @@ function App()  {
       <Route path='/' element={ <Home/> }></Route>
       <Route path='/Personajes' element={ <Personajes/> }></Route>
       <Route path='/Planetas' element={ <Planetas/> }></Route>
-
     </Routes>
   );
 }

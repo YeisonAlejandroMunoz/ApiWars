@@ -8,6 +8,7 @@ import img5 from './Rebeldes.png';
 import portada1 from './Obi-Wan-journal-2.jpg';
 import portada2 from './portada.jpg';
 import portada3 from './start.png';
+import github from './github.png'
 
 export default{
     "IM":imperio,
@@ -20,4 +21,5 @@ export default{
     "c1":portada1,
     "c2":portada2,
     "c3":portada3,
+    "red1":github,
 }

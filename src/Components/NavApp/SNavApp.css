@@ -4,10 +4,10 @@
 .links{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
 }
 .links:hover{
     color: yellow;
     transition:  100ms;
-    font-size: 28px;
+    font-size: 18px;
 }
