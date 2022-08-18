@@ -1,33 +1,31 @@
-import React, { useEffect, useState } from 'react'
-import casco from '../Img/casco.jpg'
+import logo from '../Img/LogoStar.png'
 import './PerApi.css'
+import React from "react";
 
-export const ComApi = () => {
-    const [Personajes,setPersonajes] = useState ([]);
-    useEffect(()=> {
-        async function date () {
-            const ale = await fetch ('https://swapi.dev/api/people/');
-            const muz = await ale.json();
-            setPersonajes(muz.results);
-        }
-        date();
-    },[])
+export const ComApi = ({
+    Nombre,
+    Altura,
+    Masa,
+    Pelo,
+    Ojos,
+    Nacimiento,
+    Genero
+  }) => {
   return (
     <div>
-        {Personajes.map(Personajes=>(
-            <div className='cajax-container' key={setPersonajes}>
-                <div>
-                    <img style={{width: '230px', height: '200px'}} src={casco} />
-                <p> Nombre: { Personajes.name }</p>
-                <p> Altura: { Personajes.height}</p>
-                <p> Masa: { Personajes.mass}</p>
-                <p> Color de Pelo: { Personajes.hair_color}</p>
-                <p> Color de Ojos: { Personajes.eye_color}</p>
-                <p> Año de Nacimiento: { Personajes.birth_year}</p>
-                <p> Genero: { Personajes.gender}</p>
-                </div>
-            </div>
-        ))}
+        <section className='container'>
+        <div className='cards'><img  className='portada' src={logo} />
+                <h4 >Nombre: { Nombre }</h4>
+                <p> Altura: { Altura}</p>
+                <p> Masa: { Masa }</p>
+                <p> Color de Pelo: { Pelo }</p>
+                <p> Color de Ojos: { Ojos }</p>
+                <p> Año de Nacimiento: { Nacimiento }</p>
+                <p> Genero: { Genero }</p>
+        </div>
+        </section>
     </div>
   )
 }
+
+export default ComApi;

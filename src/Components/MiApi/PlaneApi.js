@@ -1,29 +1,31 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import imgplanets from '../Img/star-wars.jpg'
+import './PerApi.css'
 
-export const PlaneApi = () => {
-    const [Planetas,setPlanetas] = useState ([]);
-    useEffect(()=> {
-        async function plan () {
-            const yei = await fetch ('https://swapi.dev/api/planets/');
-            const uz = await yei.json();
-            setPlanetas(uz.results);
-        }
-        plan();
-    },[])
+export const PlaneApi = ({
+    name,
+    rotacaion,
+    orbita,
+    diametro,
+    clima,
+    gravedad,
+    territorio,
+    poblacion
+   }) => {
   return (
     <div>
-        {Planetas.map(Planetas=>(
-            <div key={setPlanetas}>
-                <p> Nombre: { Planetas.name }</p>
-                <p>{ Planetas.rotation_period}</p>
-                <p>{ Planetas.orbital_period}</p>
-                <p>{ Planetas.diameter}</p>
-                <p>{ Planetas.climate}</p>
-                <p>{ Planetas.gravity}</p>
-                <p>{ Planetas.terrain}</p>
-                <p>{ Planetas.population}</p>
-            </div>
-        ))}
+        <section className='container'>
+        <div className='cards'><img  className='portada' src={imgplanets} />
+                <h4> Nombre: { name }</h4>
+                <p> Rotación: { rotacaion }</p>
+                <p> Orbita: { orbita }</p>
+                <p> Diametro: { diametro }</p>
+                <p> Clima:{ clima }</p>
+                <p> Gravedad: { gravedad }</p>
+                <p> Territorio: { territorio }</p>
+                <p> Población: { poblacion }</p>
+        </div>
+        </section>
     </div>
   )
 }
