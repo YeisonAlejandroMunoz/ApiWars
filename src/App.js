@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Planetas from './Pages/Planetas'
 import Personajes from './Pages/Personajes'
 import Home from './Pages/Home'
+import DetallePerson from './Pages/DetallePerson';
 
 function App()  {
   return (
@@ -11,6 +12,7 @@ function App()  {
       <Route path='/' element={ <Home/> }></Route>
       <Route path='/Personajes' element={ <Personajes/> }></Route>
       <Route path='/Planetas' element={ <Planetas/> }></Route>
+      <Route path='/DetallePerson/:id' element={ <DetallePerson/> }></Route>
     </Routes>
   );
 }

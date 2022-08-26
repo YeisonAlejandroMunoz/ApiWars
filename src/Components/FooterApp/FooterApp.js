@@ -2,8 +2,6 @@ import React from 'react'
 import Imagenes from '../Img/Imagenes';
 import './Footer.css'
 
-
-
 function FooterApp() {
   return (
     <div className='footer'>
