@@ -8,7 +8,7 @@ import { ComApi } from '../Components/MiApi/ComApi'
 const Personajes = () => {
   const { getAllPerson, dataPeople, Contador, disminuir, aumentar } =
     UsePerson();
-  useEffect(() => {
+    useEffect(() => {
     getAllPerson(Contador);
 
     // console.log(dataPeople);
@@ -16,6 +16,7 @@ const Personajes = () => {
   return (
     <div>
         <NavApp/>
+
       <div>
         <div className="apartado">Personajes</div>
         {dataPeople.map((personajes) => (
@@ -36,6 +37,7 @@ const Personajes = () => {
         <b className='number'>{Contador}</b>
         <button className="sig" onClick={aumentar}>Siguiente</button>
       </div><br/>
+
       <FooterApp/>
     </div>
   );
