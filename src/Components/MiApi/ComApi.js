@@ -16,8 +16,8 @@ export const ComApi = ({
     <div>
         <section className='m-5 text-center'>
         <div className='cards'><img  className='portada' src={logo} />
-        <button> <Link className='mylink'  href={`'/Details/${Nombre}'`} to='/DetallePerson'>Ver Más de {Nombre}</Link> </button>
-                <h4> Nombre: { Nombre }</h4>
+        <p>Ver más</p>
+                <h4  className='mylink'> <Link to='/DetallePerson'></Link> Nombre: { Nombre }</h4>
                 <p> Altura: { Altura}</p>
                 <p> Masa: { Masa }</p>
                 <p> Color de Pelo: { Pelo }</p>

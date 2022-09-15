@@ -1,5 +1,5 @@
 import { useState } from "react";
- 
+
 export const UsePlanets = () => {
   const [dataPlanets, setDataPlanets] = useState([]);
   const [Contador, setContador] = useState(1);
@@ -36,7 +36,7 @@ export const UsePlanets = () => {
       console.log(error);
     }
   };
- 
+
   return {
     getAllPlanets,
     dataPlanets,
