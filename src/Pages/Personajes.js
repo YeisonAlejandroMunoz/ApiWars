@@ -17,12 +17,10 @@ const Personajes = () => {
   return (
     <div>
       <NavApp />
-
       <div>
         <div className="apartado">Personajes</div>
-
         {dataPeople.map((personajes) => (
-          <Link to={`/DetallePerson/${personajes.name}`}>
+          <Link to={`/DetallePlaneta/${personajes.url.split("/")[5]}`}>
             <ComApi
               key={personajes.name}
               Nombre={personajes.name}
@@ -37,13 +35,9 @@ const Personajes = () => {
         ))}
       </div>
       <div className="container d-flex justify-content-center align-items-center">
-        <button className="ant" onClick={disminuir}>
-          Anterior
-        </button>
+        <button className="ant" onClick={disminuir}>Anterior</button>
         <b className="number">{Contador}</b>
-        <button className="sig" onClick={aumentar}>
-          Siguiente
-        </button>
+        <button className="sig" onClick={aumentar}>Siguiente</button>
       </div>
       <br />
       <FooterApp />
